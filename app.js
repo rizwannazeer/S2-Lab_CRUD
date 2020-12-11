@@ -52,8 +52,12 @@ app.use(function(err, req, res, next) {
 });
 
 
-mongoose.connect(config.get("db"),{ useNewUrlParser: true },{ useUnifiedTopology: true })
-.then(()=>{console.log("connected")})
-.catch((error)=>{console.log(error)})
+mongoose.connect(config.get("db"),{useNewUrlParser:true, useUnifiedTopology: true})
+.then(()=>{
+  console.log("Database Connected");
+})
+.catch((error)=>{
+  console.log(error);
+});
 
 module.exports = app;
