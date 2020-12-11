@@ -1,0 +1,5 @@
+{
+    "db":"mongodb+srv://Rizwan:Qwerty21@s2lab.atusr.mongodb.net/test",
+
+    "jwtPrivateKey":"Rizwan"
+}

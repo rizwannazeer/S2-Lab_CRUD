@@ -52,7 +52,7 @@ app.use(function(err, req, res, next) {
 });
 
 
-mongoose.connect("mongodb+srv://Rizwan:Qwerty21@s2lab.atusr.mongodb.net/courseDB",{ useNewUrlParser: true },{ useUnifiedTopology: true })
+mongoose.connect(config.get("db"),{ useNewUrlParser: true },{ useUnifiedTopology: true })
 .then(()=>{console.log("connected")})
 .catch((error)=>{console.log(error)})
 
